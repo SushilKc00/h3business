@@ -1,0 +1,29 @@
+:root {
+  --white: #f8f6f4;
+  --dark: #14100b;
+  --search: #ff9944;
+  --links: #1f1004;
+  --cart: #e57717;
+  --navbar: #ffffff;
+  --btn: #c4610b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 64.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(248, 241, 241);
+  overflow-x: hidden;
+}
+
+ul li {
+  list-style: none;
+}

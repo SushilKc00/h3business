@@ -1,0 +1,136 @@
+h3 {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+.allcategory {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+.allcategory .category-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 4rem;
+  gap: 0.6rem;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.allcategory .category-content {
+  display: flex;
+  gap: 8rem;
+  background-color: rgb(243, 236, 236);
+}
+
+.HBP {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.6rem;
+  cursor: pointer;
+}
+
+.pet-banner {
+  display: flex;
+  width: 90%;
+  margin: 4rem auto;
+  gap: 2rem;
+}
+.pet-banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.dog-category {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.dog-category img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+.story-section {
+  background-image: url("https://images.unsplash.com/photo-1579119134757-5c38803f34fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHBldHMlMjB3aXRoJTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 368px;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+}
+.story-section .story-content {
+  width: 90%;
+  height: 246px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.story-section .story-content h3 {
+  font-family: sans-serif;
+  font-size: 3.5rem;
+}
+.story-section .story-content h3 span {
+  color: var(--cart);
+}
+.story-section .story-content p {
+  font-size: 2rem;
+  padding: 0 12rem;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 2.6rem;
+}
+.slider {
+  padding: 4rem 0;
+  overflow: hidden;
+  display: flex;
+}
+
+.slider .slider-container {
+  white-space: nowrap;
+  animation: slideranimation 50s linear infinite;
+}
+.slider .slider-container img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  margin: 0 1rem;
+}
+.banner {
+  width: 90%;
+  margin: auto;
+}
+.banner img {
+  width: 100%;
+}
+@keyframes slideranimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .HBP {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .story-section .story-content p {
+    padding: 0 0.5rem;
+    text-align: justify;
+  }
+}

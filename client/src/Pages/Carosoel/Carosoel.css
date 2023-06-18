@@ -1,0 +1,10 @@
+.car-img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .car-img {
+    height: 360px;
+    width: 100%;
+  }
+}
